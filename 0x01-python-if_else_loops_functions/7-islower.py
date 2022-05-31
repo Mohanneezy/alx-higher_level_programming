@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def islower(c):
     for i in range(97, 123):
-    if i == ord(c):
-    print("{} ".format(chr(i)), end="")
+      if i == ord(c):
+          return True
+      else:
+          return False
