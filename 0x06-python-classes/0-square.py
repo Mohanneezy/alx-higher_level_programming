@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# 0-square.py
-# Nahom Gulte <lilnahublacksmith@gmail.com>
-""" this is a class """
+
+""" this is a Square class """
 
 class Square:
-    """this defines a square"""
+    """this defines the  square class"""
     pass
