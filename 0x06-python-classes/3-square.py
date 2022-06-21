@@ -5,6 +5,7 @@
 
 class Square:
     """Represent a square."""
+    """" check if size(int): is int"""
     def __init__(self, size=0):
         """Initialize a new Square."""
         if not isinstance(size, int):
