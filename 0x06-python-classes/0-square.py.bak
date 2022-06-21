@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# 0-square.py
-# Nahom Gulte <lilnahublacksmith@gmail.com>
+
 """ this is a Square class """
 
 class Square:
