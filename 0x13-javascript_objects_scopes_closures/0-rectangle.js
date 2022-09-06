@@ -1,2 +1,2 @@
 #!/usr/bin/node
-new class Rectangle ={};
+class Rectangle = new Rectangle {};
