@@ -7,5 +7,5 @@ request(url, function (error, response, body) {
     {
       count++;	    
     }
-    console.log(error || count);
+      console.log(error || count);
 });
