@@ -1,10 +1,13 @@
 #!/usr/bin/node
 const request = require('request');
-int count = 0;
 request(process.argv[2], function (error, response, body) {
-  if(JSON.parse(body).result.characters == 'https://swapi-api.hbtn.io/api/people/18/')
-    {
-      count = count + 1;	    
-    }
-      console.log(count);
+  if (!error) {
+    const results = JSON.parse(body).results;
+    console.log(results.reduce((count, movie) => {
+      return movie.characters.find((character) => character.endsWith('/18/'))
+        ? count + 1
+        : count;
+    }, 0));
+  }
 });
+
